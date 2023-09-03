@@ -9,6 +9,8 @@
 
 ## Installation
 
+Clone this repo and run ```npm i``` then ```npm run dev```. visit /wp page in your localhost. 
+
 Note: You can find all logic in ```src/app > wp folder``` 
 
 first of all add this line to your wp-config file.
