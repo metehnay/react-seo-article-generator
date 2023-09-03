@@ -1,4 +1,4 @@
-With this simple app you can generate seo articles and send them to your wordpress site. You also don't need to find images just use Unsplash API :)
+**With this simple app you can generate seo articles and send them to your wordpress site. You also don't need to find images, you can just use Unsplash API :)**
 
 ## Tech
 
@@ -12,7 +12,7 @@ With this simple app you can generate seo articles and send them to your wordpre
 first of all add this line to your wp-config file.
 ```define('WP_APPLICATION_PASSWORDS', true);```
 
-go to some users profile in your wordpress. scroll down to find the application passwords section. create a password. now you can use the password in here
+go to your user profile in wordpress. scroll down to find the application passwords section. create a password. now you can use the password in here
 
 ```
  const shareContentToWordPress = async () => {
