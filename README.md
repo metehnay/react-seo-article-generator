@@ -1,4 +1,4 @@
-**With this simple app you can generate seo articles and send them to your wordpress site. You also don't need to find images, you can just use Unsplash API**
+**With this simple React app you can generate seo articles and send them to your wordpress site. You also don't need to find images, you can just use Unsplash API**
 
 ## Tech
 
