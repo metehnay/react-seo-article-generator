@@ -1,34 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+With this simple app you can generate seo articles and send them to your wordpress site. You also don't need to find images just use Unsplash API :)
 
-## Getting Started
+## Tech
 
-First, run the development server:
+- NextJs
+- Wordpress API
+- OpenAI API
+- Unsplash API
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+## Installation
+
+first of all add this line to your wp-config file.
+```define('WP_APPLICATION_PASSWORDS', true);```
+
+go to some users profile in your wordpress. scroll down to find the application passwords section. create a password. now you can use the password in here
+
+```
+ const shareContentToWordPress = async () => {
+    setLoading(true);
+    const wordpressUrl = "YOUR_WORDPRESS_URL";
+    const username = "YOUR_WORDPRESS_USERNAME";
+    const password = "YOUR_WORDPRESS_PASSWORD";
+    const auth = "Basic " + btoa(username + ":" + password);
+ ```
+
+Use your Unsplash API key in client_id
+
+```
+const searchUnsplash = async () => {
+    try {
+      const response = await axios.get(
+        "https://api.unsplash.com/search/photos",
+        {
+          params: {
+            query: searchTerm,
+            client_id: "YOUR_UNSPLASH_CLIENT_ID",
+          },
+        }
+      );
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Replace apiKey with your openAI api key. 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+const generateContent = async () => {
+    setLoading(true);
+    const apiKey = "YOUR_OPENAI_API_KEY";
+    try {
+      const response = await axios.post(
+        "https://api.openai.com/v1/chat/completions",
+        {
+          model: "gpt-3.5-turbo",
+          messages: [{ role: "user", content: topicTitle }],
+          max_tokens: 700,
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${apiKey}`,
+          },
+        }
+      );
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+That's it simple and easy to use =) 
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
