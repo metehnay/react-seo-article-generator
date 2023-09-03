@@ -9,7 +9,7 @@
 
 ## Installation
 
-Clone this repo and run ```npm i``` then ```npm run dev```. visit /wp page in your localhost. 
+Clone this repo and run ```npm i``` then ```npm run dev```. visit ```localhost:3000/wp``` in your localhost. 
 
 Note: You can find all logic in ```src/app > wp folder``` 
 
