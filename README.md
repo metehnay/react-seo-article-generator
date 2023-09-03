@@ -9,6 +9,8 @@
 
 ## Installation
 
+Note: You can find all logic in ```src/app > wp folder``` 
+
 first of all add this line to your wp-config file.
 ```define('WP_APPLICATION_PASSWORDS', true);```
 
