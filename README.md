@@ -1,4 +1,4 @@
-**Just a simple app i did it for my wordpress site. Feel free to use. You can generate seo articles and images with one click and send them to your wordpress site. **
+Just a simple app i did it for my wordpress site. Feel free to use. You can generate seo articles and images with one click and send them to your wordpress site. 
 
 ## Tech
 
