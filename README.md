@@ -1,4 +1,4 @@
-Just a simple app i did it for my wordpress site. Feel free to use. 
+Just a simple React app i did it for my wordpress site. Feel free to use. 
 
 ## Features
 - Results will be converted into HTML; you don't need to edit the content.
