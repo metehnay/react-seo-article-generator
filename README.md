@@ -1,5 +1,5 @@
 Just a simple app i did it for my wordpress site. Feel free to use. You can generate seo articles and images with one click and send them to your wordpress site. 
-![IMAGE]([https://github.com/yourusername/yourrepository/blob/main/images/example.png](https://i.imgur.com/0aFQFp4.png))
+![IMAGE]([https://github.com/yourusername/yourrepository/blob/main/images/example.png](https://i.imgur.com/0aFQFp4.png](https://i.imgur.com/0aFQFp4.png])
 
 ## Tech
 
