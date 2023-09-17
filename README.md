@@ -1,12 +1,14 @@
-Just a simple app i did it for my wordpress site. Feel free to use. You can generate seo articles and images with one click and send them to your wordpress site. 
+Just a simple app i did it for my wordpress site. Feel free to use. 
+
+## Features
+- Results will be converted into HTML; you don't need to edit the content.
+- Write your prompt and add posts to your WordPress site with one click.
+- With the Unsplash API, you don't need to find and upload images.
+- You can schedule posts; time will be random, so this won't flag your blog as spam.
+
+
 ![Alt Text](https://i.imgur.com/0aFQFp4.png)
 
-## Tech
-
-- NextJs
-- Wordpress API
-- OpenAI API
-- Unsplash API
 
 ## Installation
 
