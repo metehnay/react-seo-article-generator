@@ -12,9 +12,9 @@ Just a simple React app i did it for my wordpress site. Feel free to use.
 
 ## Installation
 
-Clone this repo and run ```npm i``` then ```npm run dev```. visit ```localhost:3000/wp``` in your localhost. 
+Clone this repo and run ```npm i``` then ```npm run dev```. visit ```localhost:3000``` in your localhost. 
 
-Note: You can find all logic in ```src/app > wp folder``` 
+Note: You can find all logic in ```src/app > App.tsx``` 
 
 first of all add this line to your wp-config file.
 ```define('WP_APPLICATION_PASSWORDS', true);```
